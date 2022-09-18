@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "vendor": "Flipkart",
+    "desc": "Entertainment",
+    "price": 15486,
+    "qty": 1,
+    "barcode": "Asxcdkj"
+  },
+  {
+    "id": 2,
+    "name": "Mobile",
+    "vendor": "Amazon",
+    "desc": "Proffessional",
+    "price": 12354,
+    "qty": 12,
+    "barcode": "aqwe@@#mljdgb"
+  },
+  {
+    "id": 3,
+    "name": "Mouse",
+    "vendor": "Flipkart",
+    "desc": "Pinting-device",
+    "price": 500,
+    "qty": 5,
+    "barcode": "eyriu$@@#mljdgb"
+  },
+  {
+    "id": 4,
+    "name": "Mouse",
+    "vendor": "Flipkart",
+    "desc": "Pinting-device",
+    "price": 500,
+    "qty": 5,
+    "barcode": "eyriu$@#mljdgb"
+  },
+  {
+    "id": 5,
+    "name": "Mouse",
+    "vendor": "Flipkart",
+    "desc": "Pinting-device",
+    "price": 450,
+    "qty": 5,
+    "barcode": "eyriu$@#mljdgb"
+  },
+  {
+    "id": 6,
+    "name": "Keyboard",
+    "vendor": "Meesho",
+    "desc": "Input-Device",
+    "price": 800,
+    "qty": 2,
+    "barcode": "AXKPA2342@#$ljdj"
+  }
+]

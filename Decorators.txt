@@ -1,0 +1,46 @@
+﻿Decorators:
+	- A decorator is a design pattern in Python.
+	- to add new functionality to an existing object without modifying its structure.
+	- Decorators are usually called before the definition of a function you want to decorate.
+	- modify the behavior of function or class (without permanently modify)
+	- It is denoted by '@' Keyword
+	- we have two different kinds of decorators in Python: 
+		Function decorators. 
+		Class decorators.
+		
+	- if we dont want to change the code then we use decorator
+	
+	Example:
+		def upper(fun):
+			def foo():
+				a = fun.Upper
+				return a
+			return foo
+
+		@upper
+		def greet(msg):
+			return msg
+		# ans = greet('abcd')
+		# print(ans)
+		greet()
+
+Property:
+	- It is type of decorator.(Built in decorators) 
+	- the main purpose of Property() function is to create property of a class.
+	- Syntax: property(fget, fset, fdel, doc)
+	- Parameters:
+		fget() – used to get the value of attribute
+		fset() – used to set the value of attribute
+		fdel() – used to delete the attribute value
+		doc() – string that contains the documentation (docstring) for the attribute
+		Return: Returns a property attribute from the given getter, setter and deleter.
+		
+	- If no arguments are given, property() method returns a base property attribute 
+	  that doesn’t contain any getter, setter or deleter. 
+	- If doc isn’t provided, property() method takes the docstring of the getter function.
+	
+Closure:
+	- Inner function called in scope of outer function.
+	- Before getting into what a closure is, we have to first understand what a nested function and nonlocal variable is.
+	- A function defined inside another function is called a nested function. 
+	- Nested functions can access variables of the enclosing scope.
