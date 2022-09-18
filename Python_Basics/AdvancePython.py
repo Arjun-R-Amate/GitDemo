@@ -1,5 +1,6 @@
 # Lambda function : In python lambda is an anonymous function. Lambda function can use for shorter time of period
 # Lambda function takes many arguments but it have only one expression
+
 x = lambda a, b : a * b
 print(x(5, 4))
 
