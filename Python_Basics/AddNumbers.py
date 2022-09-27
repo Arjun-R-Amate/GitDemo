@@ -1,3 +1,4 @@
+
 #Write a program to add natural numbers using while loop and function?
 def add_num(num):
     add = 0
