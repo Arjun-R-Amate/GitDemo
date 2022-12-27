@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<h1>Insert Values and Choose Operator</h1>
+<hr>
+<form action="" method="POST"> {% csrf_token %}
+    <table>
+        <label for="Value1">Value1: </label><br>
+        <input type="number" name="val1" id="val1"><br>
+<!--        <label for="Operator">Select Operator:</label><br>-->
+<!--        <select name="opr" id="">-->
+<!--            <option value="+">Addition</option>-->
+<!--            <option value="-">Subtraction</option>-->
+<!--            <option value="*">Multiplication</option>-->
+<!--            <option value="/">Division</option>-->
+<!--        </select> <br>-->
+        <label for="Operator">Operator: </label><br>
+        <input type="text" name="opr" id="opr"><br>
+        <label for="Value2">Value2: </label><br>
+        <input type="number" name="val2" id="val2"><br>
+        <hr>
+        <button type="submit">Calculate</button>
+        <hr>
+        <label for="output">OUTPUT: </label><br>
+        <input type="text" name="" value="{{finalans}}" id=""><br>
+    </table>
+</form>
+</body>
+</html>
