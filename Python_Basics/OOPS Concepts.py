@@ -3,7 +3,8 @@
 # Class is an blueprint for creating an object
 # object is used to access the properties and methods of specific class , object is the instance of the class.
 # __init__(self) is a constructor which is used to initialise the properties of class , self is the current reference of the instace
-#Abstraction,  Polymorphism, Encapsulation, Inheritance  these are main types of OOPS
+# constructor calls when object is being created.
+#Abstraction,  Polymorphism, Encapsulation, Inheritance  these are main concepts of OOPS
 
 #Abstraction
 # abstraction means hiding implementation details and show essential data.
