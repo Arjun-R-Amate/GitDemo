@@ -9,6 +9,8 @@ def home(request):
 
 def calculation(request):
     result = 0
+    number1 = ""
+    number2 = ""
     try:
         if request.method == 'POST':
             number1 = eval(request.POST['val1'])
@@ -26,12 +28,14 @@ def calculation(request):
                 return HttpResponse("Invalid inputs")
     except:
         return Exception
-    context = {'finalans': "{:.2f}".format(result), 'title': 'self company'}
+    context = {'finalans': "{:.2f}".format(result), 'title': 'self company', 'num1': number1, 'num2': number2}
     return render(request, 'forms.html', context)
 
 
 def calculate(request):
     answer = 0
+    num1 = ""
+    num2 = ""
     try:
         if request.method == 'POST':
             num1 = eval(request.POST["val1"])
@@ -49,5 +53,5 @@ def calculate(request):
                 return HttpResponse("Invalid Inputs...")
     except:
         return HttpResponse("Program error")
-    context = {'result': '{:.2f}'.format(answer)}
+    context = {'result': '{:.2f}'.format(answer), 'num1': num1, 'num2': num2, 'Title': 'Company Name'}
     return render(request, 'calculate.html', context)

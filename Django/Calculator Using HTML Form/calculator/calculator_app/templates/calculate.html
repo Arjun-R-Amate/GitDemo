@@ -8,7 +8,7 @@
 <h1>Insert values and Select Operator</h1>
 <form action="" method="POST"> {% csrf_token %}
     <label for="Num1">First Number: </label>
-    <input type="text" placeholder="Enter First Number" name="val1" ><br><br>
+    <input type="text" placeholder="Enter First Number" name="val1" value="{{num1}}" ><br><br>
     <label for="Operator">Select Operator: </label>
     <select name="opr">
         <option value="+">Add</option>
@@ -18,7 +18,7 @@
     </select>
     <br><br>
     <label for="Num2">Second Number: </label>
-    <input type="text" placeholder="Enter Second Number" name="val2" ><br><br>
+    <input type="text" placeholder="Enter Second Number" name="val2" value="{{num2}}"><br><br>
     <hr>
     <button type="submit">Calculate</button>
     <hr>
