@@ -11,8 +11,8 @@ def calculation(request):
     result = 0
     try:
         if request.method == 'POST':
-            number1 = int(request.POST['val1'])
-            number2 = int(request.POST['val2'])
+            number1 = eval(request.POST['val1'])
+            number2 = eval(request.POST['val2'])
             operator = request.POST['opr']
             if operator == '+':
                 result = number1 + number2
@@ -34,8 +34,8 @@ def calculate(request):
     answer = 0
     try:
         if request.method == 'POST':
-            num1 = int(request.POST["val1"])
-            num2 = int(request.POST["val2"])
+            num1 = eval(request.POST["val1"])
+            num2 = eval(request.POST["val2"])
             operator = request.POST["opr"]
             if operator == '+':
                 answer = num1 + num2

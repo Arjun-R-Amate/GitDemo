@@ -13,8 +13,8 @@ def calculate(request):
     variable = CalculatorForm()
     result = 0
     if request.method == 'POST':
-        num1 = int(request.POST.get("value1"))
-        num2 = int(request.POST.get("value2"))
+        num1 = eval(request.POST.get("value1"))
+        num2 = eval(request.POST.get("value2"))
         operator = request.POST.get("operator")
         if operator == '+':
             result = num1 + num2

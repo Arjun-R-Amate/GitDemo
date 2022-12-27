@@ -10,7 +10,7 @@
 <form action="" method="POST"> {% csrf_token %}
     <table>
         <label for="Value1">Value1: </label><br>
-        <input type="number" name="val1" id="val1"><br>
+        <input type="text" name="val1" id="val1"><br>
 <!--        <label for="Operator">Select Operator:</label><br>-->
 <!--        <select name="opr" id="">-->
 <!--            <option value="+">Addition</option>-->
@@ -21,7 +21,7 @@
         <label for="Operator">Operator: </label><br>
         <input type="text" name="opr" id="opr"><br>
         <label for="Value2">Value2: </label><br>
-        <input type="number" name="val2" id="val2"><br>
+        <input type="text" name="val2" id="val2"><br>
         <hr>
         <button type="submit">Calculate</button>
         <hr>
