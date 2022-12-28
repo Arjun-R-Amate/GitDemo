@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Enter number to check Even or Odd</h1> <br>
+<form action="" method="POST" > {% csrf_token %}
+<!--double curly brackets means dynamic routing-->
+{{input_value}}
+<hr>
+<button type="submit" >Check</button>
+<hr>
+<label>Your Answer is: </label>
+<h1>{{output}}</h1>
+</form>
+</body>
+</html>
