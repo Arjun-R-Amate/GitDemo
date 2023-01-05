@@ -33,6 +33,9 @@ def calculation(request):
 
 
 def calculate(request):
+    '''
+    Here usage select tag in html name used as operator and value tag is used input
+    '''
     answer = 0
     num1 = ""
     num2 = ""
@@ -41,6 +44,7 @@ def calculate(request):
             num1 = eval(request.POST["val1"])
             num2 = eval(request.POST["val2"])
             operator = request.POST["opr"]
+            print(operator)
             if operator == '+':
                 answer = num1 + num2
             elif operator == '-':
