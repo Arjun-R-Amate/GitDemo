@@ -11,4 +11,5 @@ urlpatterns = [
     path('delete/<int:eid>', views.delete_emp_by_id, name='delete'),
     path('update/', views.update_an_employee, name='updat'),
     path('update/<int:eid>', views.update_emp_by_id, name='update'),
+    path('search/', views.filter_emp, name='filtr'),
 ]

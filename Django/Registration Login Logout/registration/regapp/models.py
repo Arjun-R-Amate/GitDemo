@@ -15,7 +15,7 @@ class UserModel(models.Model):
 
 class EmployeeModel(models.Model):
     name = models.CharField(max_length=150)
-    age = models.IntegerField()
+    age = models.CharField(max_length=50)
     address = models.CharField(max_length=250)
     department = models.CharField(max_length=150)
 

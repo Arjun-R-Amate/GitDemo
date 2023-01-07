@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from . models import EmployeeModel
 from . forms import EmployeeForm
 from django.core.paginator import Paginator
+from django.db.models import Q
 
 # Create your views here.
 
@@ -133,3 +134,22 @@ def update_emp_by_id(request, eid):
         print(i)
     context = {'data': obj}
     return render(request, 'newupdate.html', context)
+
+
+def filter_emp(request):
+    output = EmployeeModel.objects.all()
+    if request.method == 'POST':
+        empid = request.POST.get('eid')
+        empname = request.POST.get('ename')
+        empage = request.POST.get('eage')
+        empadd = request.POST.get('eadd')
+        empdept = request.POST.get('edept')
+        print(empid, empname, empage, empadd, empdept)
+        output = EmployeeModel.objects.filter(name__icontains=empname,
+                                              address__icontains=empadd, department__icontains=empdept)
+        # else:
+        #     emp = EmployeeModel.objects.filter(name__icontains=empname,
+        #                                        address__icontains=empadd, department__icontains=empdept)
+        #     output = emp
+    context = {'output': output}
+    return render(request, 'filteremp.html', context)
